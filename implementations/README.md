@@ -20,7 +20,24 @@ Each implementation translates the canonical rules into the format required by t
 
 ## Installation
 
-### Install script (recommended)
+### One-command setup (recommended for beginners)
+
+Interactive setup with prompts, or pass flags for automation:
+
+```bash
+# Interactive (run from repo root)
+python scripts/setup-rules.py
+
+# Flag-based
+python scripts/setup-rules.py --tool cursor --project .
+
+# Verify install
+python scripts/setup-rules.py --doctor --tool cursor --project .
+```
+
+Options: `--tool`, `--project`, `--scope` (project/user; user-level for Codex only), `--force`, `--dry-run`, `--doctor`.
+
+### Install script (direct)
 
 From the ai-assistant-rules repo root, or by path to the script:
 

@@ -22,11 +22,14 @@ Canonical rules and best practices for AI coding assistants (Cursor, Claude Code
 - [Gemini CLI](implementations/gemini/) — Gemini CLI
 - [Antigravity](implementations/antigravity/) — Antigravity
 
-Install using the recommended script:
+Install using the setup script (interactive or flag-based):
 
 ```bash
-python scripts/install-implementation.py <tool> [target_dir]
+python scripts/setup-rules.py                    # interactive
+python scripts/setup-rules.py --tool cursor --project .
 ```
+
+Or use the direct install script: `python scripts/install-implementation.py <tool> [target_dir]`
 
 See [implementations/README.md#installation](implementations/README.md#installation) for options and examples.
 

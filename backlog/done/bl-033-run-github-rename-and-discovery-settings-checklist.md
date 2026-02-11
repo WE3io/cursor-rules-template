@@ -1,6 +1,8 @@
+**Completed:** 2026-02-11
+
 # BL-033: Run GitHub Rename and Discovery Settings Checklist
 
-**Phase:** Active (Untriaged)
+**Phase:** Now
 
 ## 1. Outcome
 Post-rename GitHub configuration is applied and documented (repository name, description, topics, social preview, homepage), ensuring external discoverability matches in-repo identity.

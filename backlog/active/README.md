@@ -12,7 +12,8 @@ Work items ready for execution. Each file follows the Work Item Designer format:
 
 | File | Summary |
 |------|---------|
-| [bl-033-run-github-rename-and-discovery-settings-checklist.md](bl-033-run-github-rename-and-discovery-settings-checklist.md) | Execute GitHub rename/discoverability settings checklist and record completion (manual) |
+| [bl-033-run-github-rename-and-discovery-settings-checklist.md](bl-033-run-github-rename-and-discovery-settings-checklist.md) | Execute GitHub rename/discoverability settings checklist and record completion (manual — see [backlog/decisions/2026-02-11-github-rename-checklist.md](../decisions/2026-02-11-github-rename-checklist.md)) |
+| [bl-035-add-one-command-setup-and-doctor-for-rules.md](bl-035-add-one-command-setup-and-doctor-for-rules.md) | Add single-command setup and `--doctor` validation for rule discoverability |
 
 ### Phase: Next (Completed 2026-02-11)
 

@@ -22,10 +22,10 @@ Perform these steps in GitHub Settings (Settings → General) after merging cont
 
 *Fill in after completing the checklist:*
 
-- **Completed:** _YYYY-MM-DD_
-- **Repository name (final):** _
-- **Description (final):** _
-- **Topics (final):** _
+- **Completed:** *(2026-02-11)*
+- **Repository name (final):** *[ai-assistant-rules](https://github.com/WE3io/ai-assistant-rules)*
+- **Description (final):** *Unified AI coding assistant rules for Cursor, Claude Code, Codex, Gemini CLI, Antigravity*
+- **Topics (final):** *`ai-assistant`, `cursor`, `claude`, `codex`, `gemini`, `antigravity`, `ai-coding`, `rules`*
 
 ---
 
