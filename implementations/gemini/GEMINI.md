@@ -29,6 +29,13 @@ Behavioral guidelines for AI-assisted development. Based on [AI Blindspots](http
 - **Leverage strengths:** Code generation, boilerplate, mechanical refactoring.
 - **Acknowledge weaknesses:** Debugging non-obvious bugs, root cause identification, security implications.
 - **Verify critical items:** LLMs sound confident when wrong.
+- **Knowledge limits:** Verify framework/API details against primary docs when unsure.
+
+### Type Safety and Execution Hygiene
+
+- **Type systems first:** Prefer static types and strict compiler settings where available.
+- **Static-types workflow:** Run type checks before tests and before finalizing structural refactors.
+- **Stateless commands:** Make each shell command independently runnable; avoid hidden shell-state dependencies.
 
 ---
 

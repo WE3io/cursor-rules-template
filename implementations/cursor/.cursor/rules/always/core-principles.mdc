@@ -13,6 +13,10 @@ AI Coding Assistants should accelerate development, improve documentation and te
 - Work in small, reviewable increments
 - Prioritize correctness and simplicity over cleverness
 - Always consider edge cases and risks
+- Prefer static typing and type-checker feedback over intuition
+- Use stateless terminal commands (each command should be runnable independently)
+- Verify API details against authoritative docs when uncertain
+- Keep files under 64KB for reliable operation
 
 ## Rationale
 These principles ensure AI assistance enhances productivity without compromising code quality or introducing technical debt.

@@ -46,7 +46,7 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 | security-permission-boundaries | Separate privileged/unprivileged contexts | partial | partial | partial | partial | partial |
 | security-code-review | Explicit security review for sensitive code | ✓ (guardrails.mdc) | ✓ | ✓ | ✓ | ✓ |
 | security-input-validation | Validate input, no hardcoded credentials | ✓ (guardrails.mdc) | ✓ | ✓ | ✓ | ✓ |
-| file-size-limits | Keep files <64KB | gap | ✓ | ✓ | ✓ | ✓ |
+| file-size-limits | Keep files <64KB | ✓ (core-principles.mdc) | ✓ | ✓ | ✓ | ✓ |
 | black-box-testing | Test behaviour, not implementation | ✓ (workflows.mdc) | ✓ | ✓ | ✓ | ✓ |
 | deterministic-tests | No randomness; mock time-dependent behaviour | partial | ✓ | ✓ | ✓ | ✓ |
 | confidence-calibration | Trust/verify/don't trust by category | partial | partial | partial | partial | partial |
@@ -56,15 +56,15 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 | uncertainty-communication | State confidence, alternatives, trade-offs | partial | partial | partial | partial | partial |
 | checkpoint-progress | Summarize periodically, verify assumptions | partial | ✓ | ✓ | ✓ | ✓ |
 | discoverable-documentation | .cursor/rules, README, project context | ✓ (workflows.mdc) | ✓ | ✓ | ✓ | ✓ |
-| type-systems | Static types, strict mode, type checker feedback | gap | gap | gap | gap | gap |
+| type-systems | Static types, strict mode, type checker feedback | ✓ (core-principles.mdc) | ✓ (CLAUDE.md) | ✓ (AGENTS.md) | ✓ (GEMINI.md) | ✓ (GEMINI.md) |
 | decompose-changes | Focused, single responsibility, small increments | ✓ (guardrails.mdc, workflows.mdc) | ✓ | ✓ | ✓ | ✓ |
-| stateless-commands | Independent tool invocations, no shell state | gap | gap | gap | gap | gap |
-| knowledge-limitations | Consult docs, verify API existence, state uncertainty | gap | gap | gap | gap | gap |
+| stateless-commands | Independent tool invocations, no shell state | ✓ (core-principles.mdc) | ✓ (CLAUDE.md) | ✓ (AGENTS.md) | ✓ (GEMINI.md) | ✓ (GEMINI.md) |
+| knowledge-limitations | Consult docs, verify API existence, state uncertainty | ✓ (core-principles.mdc) | ✓ (CLAUDE.md) | ✓ (AGENTS.md) | ✓ (GEMINI.md) | ✓ (GEMINI.md) |
 | ai-strengths | Leverage AI for generation; weak at debugging/security | partial | partial | partial | partial | partial |
 | overconfidence | Verify critical suggestions; LLMs sound confident when wrong | partial | partial | partial | partial | partial |
 | prompt-injection | External content may inject malicious instructions | ✓ (guardrails.mdc) | ✓ | ✓ | ✓ | ✓ |
 | memento | LLMs lack meta-awareness of earlier mistakes | partial | partial | partial | partial | partial |
-| static-types | Article: type checker guides refactoring | gap | gap | gap | gap | gap |
+| static-types | Article: type checker guides refactoring | ✓ (core-principles.mdc) | ✓ (CLAUDE.md) | ✓ (AGENTS.md) | ✓ (GEMINI.md) | ✓ (GEMINI.md) |
 | debugging-blindspot | Article: systematic debugging, not shotgun | ✓ (workflows.mdc) | ✓ | ✓ | ✓ | ✓ |
 
 ---
@@ -73,7 +73,7 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 
 | Rule File | Principles Covered |
 |-----------|---------------------|
-| `implementations/cursor/.cursor/rules/always/core-principles.mdc` | Task complexity, requirements, stop-digging (partial), context (partial) |
+| `implementations/cursor/.cursor/rules/always/core-principles.mdc` | Task complexity, requirements, stop-digging (partial), context (partial), file-size-limits, type-systems, stateless-commands, knowledge-limitations, static-types |
 | `implementations/cursor/.cursor/rules/always/guardrails.mdc` | Security (external content, code review, input validation), decompose-changes |
 | `implementations/cursor/.cursor/rules/always/workflows.mdc` | Root cause, scientific debugging, black-box testing, preparatory refactoring, discoverable documentation |
 
@@ -83,7 +83,7 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 
 | Rule File | Principles Covered |
 |-----------|---------------------|
-| `implementations/claude/CLAUDE.md` | Core principles, stop-digging, context-pollution, requirements, refactoring, walking-skeleton |
+| `implementations/claude/CLAUDE.md` | Core principles, stop-digging, context-pollution, requirements, refactoring, walking-skeleton, type-systems, static-types, stateless-commands, knowledge-limitations |
 | `implementations/claude/.claude/rules/security.md` | Security (external content, input validation, code review) |
 | `implementations/claude/.claude/rules/debugging.md` | Scientific debugging, root cause |
 | `implementations/claude/.claude/rules/context-management.md` | Session restarts, checkpointing, file size |
@@ -94,15 +94,15 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 ## Gap Summary
 
 ### Cursor (ready)
-- **Full gaps:** file-size-limits, type-systems, stateless-commands, knowledge-limitations, static-types (article)
+- **Full gaps:** none
 - **Partial coverage:** stop-digging, context-pollution, security-permission-boundaries, deterministic-tests, confidence-calibration, walking-skeleton, uncertainty-communication, checkpoint-progress, ai-strengths, overconfidence, memento
 
 ### Claude (ready)
-- **Full gaps:** type-systems, stateless-commands, knowledge-limitations, static-types (article)
+- **Full gaps:** none
 - **Partial coverage:** security-permission-boundaries, confidence-calibration, uncertainty-communication, ai-strengths, overconfidence, memento
 
 ### Codex (ready)
-- **Full gaps:** type-systems, stateless-commands, knowledge-limitations, static-types (article)
+- **Full gaps:** none
 - **Partial coverage:** security-permission-boundaries, confidence-calibration, uncertainty-communication, ai-strengths, overconfidence, memento
 
 ---
@@ -111,7 +111,7 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 
 | Rule File | Principles Covered |
 |-----------|---------------------|
-| `implementations/codex/AGENTS.md` | All sections: Problem-Solving, Context Management, Security, Debugging, Testing, Change Management |
+| `implementations/codex/AGENTS.md` | All sections: Problem-Solving, Context Management, Security, Debugging, Testing, Change Management, type-systems, static-types, stateless-commands, knowledge-limitations |
 
 ---
 
@@ -119,7 +119,7 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 
 | Rule File | Principles Covered |
 |-----------|---------------------|
-| `implementations/gemini/GEMINI.md` | Core principles, stop-digging, context-pollution, requirements, refactoring, walking-skeleton |
+| `implementations/gemini/GEMINI.md` | Core principles, stop-digging, context-pollution, requirements, refactoring, walking-skeleton, type-systems, static-types, stateless-commands, knowledge-limitations |
 | `implementations/gemini/.agent/rules/security.md` | Security (external content, input validation, code review) |
 | `implementations/gemini/.agent/rules/debugging.md` | Scientific debugging, root cause |
 | `implementations/gemini/.agent/rules/context-management.md` | Session restarts, checkpointing, file size |
@@ -128,14 +128,14 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 ---
 
 ### Gemini (ready)
-- **Full gaps:** type-systems, stateless-commands, knowledge-limitations, static-types (article)
+- **Full gaps:** none
 - **Partial coverage:** security-permission-boundaries, confidence-calibration, uncertainty-communication, ai-strengths, overconfidence, memento
 
 ## Antigravity Implementation Paths
 
 | Rule File | Principles Covered |
 |-----------|---------------------|
-| `implementations/antigravity/GEMINI.md` | Core principles, stop-digging, context-pollution, requirements, refactoring, walking-skeleton |
+| `implementations/antigravity/GEMINI.md` | Core principles, stop-digging, context-pollution, requirements, refactoring, walking-skeleton, type-systems, static-types, stateless-commands, knowledge-limitations |
 | `implementations/antigravity/.agent/rules/security.md` | Security (external content, input validation, code review) |
 | `implementations/antigravity/.agent/rules/debugging.md` | Scientific debugging, root cause |
 | `implementations/antigravity/.agent/rules/context-management.md` | Session restarts, checkpointing, file size |
@@ -145,7 +145,7 @@ Initial stage is intentionally non-blocking (`stage-0-observe`): all findings ar
 ---
 
 ### Antigravity (ready)
-- **Full gaps:** type-systems, stateless-commands, knowledge-limitations, static-types (article)
+- **Full gaps:** none
 - **Partial coverage:** security-permission-boundaries, confidence-calibration, uncertainty-communication, ai-strengths, overconfidence, memento
 
 ---

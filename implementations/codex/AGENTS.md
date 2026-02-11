@@ -72,3 +72,12 @@ Avoid shotgun fixes without understanding cause.
 - **Leverage:** Code generation, boilerplate, mechanical refactoring.
 - **Acknowledge weaknesses:** Debugging non-obvious bugs, root cause identification, security implications.
 - **Verify critical items:** LLMs sound confident when wrong.
+- **Knowledge limits:** Verify API/library claims against primary documentation before relying on them.
+
+---
+
+## Type Safety and Execution Hygiene
+
+- **Type systems first:** Prefer static typing and strict mode where the stack supports it.
+- **Static-types workflow:** Run type checks before tests and before finalizing major refactors.
+- **Stateless commands:** Each shell command should be independently runnable; avoid reliance on previous shell state.

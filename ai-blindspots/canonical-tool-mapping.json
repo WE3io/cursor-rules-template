@@ -76,7 +76,7 @@
     },
     {
       "id": "file-size-limits",
-      "Cursor": "gap",
+      "Cursor": "ok",
       "Claude": "ok",
       "Codex": "ok",
       "Gemini": "ok",
@@ -156,11 +156,11 @@
     },
     {
       "id": "type-systems",
-      "Cursor": "gap",
-      "Claude": "gap",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "decompose-changes",
@@ -172,19 +172,19 @@
     },
     {
       "id": "stateless-commands",
-      "Cursor": "gap",
-      "Claude": "gap",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "knowledge-limitations",
-      "Cursor": "gap",
-      "Claude": "gap",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "ai-strengths",
@@ -220,11 +220,11 @@
     },
     {
       "id": "static-types",
-      "Cursor": "gap",
-      "Claude": "gap",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "debugging-blindspot",
