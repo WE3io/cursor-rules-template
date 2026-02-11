@@ -13,9 +13,9 @@ Root `README.md` accurately reflects the repository's current implementation cov
 **References:** `README.md`, `implementations/README.md`, `backlog/active/README.md`.
 
 ## 3. Acceptance Checks
-- [ ] Root README no longer states non-Cursor implementations are "planned" where they are now available.
-- [ ] Implementation list in root README aligns with `implementations/README.md`.
-- [ ] Installation path in root README points to current recommended flow.
+- [x] Root README no longer states non-Cursor implementations are "planned" where they are now available.
+- [x] Implementation list in root README aligns with `implementations/README.md`.
+- [x] Installation path in root README points to current recommended flow.
 - [ ] Updated README passes markdown lint and link checks in docs QA.
 
 ## 4. Explicit Non-Goals

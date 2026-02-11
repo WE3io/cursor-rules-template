@@ -19,12 +19,30 @@ cursorrules/
 │   └── done/                # Completed work items
 │
 └── implementations/        # Tool-specific rule configurations
-    ├── cursor/              # Cursor IDE (Claude, Codex, Gemini planned)
-    │   ├── .cursor/rules/   # Ready-to-use Cursor rules
-    │   └── docs/
+    ├── cursor/              # Cursor IDE rules
+    ├── claude/              # Claude Code rules
+    ├── codex/               # Codex rules
+    ├── gemini/              # Gemini CLI rules
+    └── antigravity/         # Antigravity rules
 ```
 
 **Relationship:** All implementations derive from `ai-blindspots`. Each tool folder contains the same principles translated into that tool's configuration format. See [implementations/README.md](implementations/README.md) for details.
+
+---
+
+## Available Implementations
+
+- [Cursor](implementations/cursor/)
+- [Claude Code](implementations/claude/)
+- [Codex](implementations/codex/)
+- [Gemini CLI](implementations/gemini/)
+- [Antigravity](implementations/antigravity/)
+
+Install using the recommended script:
+
+`python scripts/install-implementation.py <tool> [target_dir]`
+
+See [implementations/README.md#installation](implementations/README.md#installation) for options and examples.
 
 ---
 
