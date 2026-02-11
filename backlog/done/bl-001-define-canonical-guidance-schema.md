@@ -1,4 +1,4 @@
-**Completed:** 2026-02-11 — Schema documented with all fields; worked example in backlog/templates/canonical-guidance-schema.md. Pending maintainer sign-off.
+**Completed:** 2026-02-11 — Schema documented with all fields; worked example in backlog/templates/canonical-guidance-schema.md. Sign-off blocked: requires verification that rules are implemented correctly across tools (Cursor, Claude, Codex, Gemini, Antigravity) before maintainer can sign off.
 
 # BL-001: Define Canonical Guidance Schema
 
@@ -16,7 +16,7 @@ Standard structure for each rule/guidance item is documented. Schema includes: `
 ## 3. Acceptance Checks
 - [x] Schema document exists with all fields defined.
 - [x] Worked example(s) demonstrate schema usage.
-- [ ] Maintainer review completed and signed off.
+- [ ] Maintainer review completed and signed off (blocked: verify implementations across tools first).
 
 ## 4. Explicit Non-Goals
 - Migrating existing content to schema (separate work).

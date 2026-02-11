@@ -6,13 +6,11 @@ Weekly 15-minute triage of research intake. Go/no-go decisioning with clear owne
 
 - **Frequency:** Weekly
 - **Duration:** 15 minutes (timebox)
-- **Day/time:** TBD by owner
+- **Day/time:** Recurring reminder set by owner
 
 ## Owner
 
-Assigned triage owner: TBD
-
-_Update when owner is assigned._
+Assigned triage owner: Sunil
 
 ## Triage Checklist
 

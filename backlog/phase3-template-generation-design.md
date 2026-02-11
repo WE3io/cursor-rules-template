@@ -2,7 +2,7 @@
 
 Semi-automated generation of tool formats from canonical schema. Human review before commit required.
 
-**Status:** Design complete. Awaiting maintainer approval.
+**Status:** Design complete. Option D (LLM with custom prompt) preferred. Awaiting maintainer approval.
 
 **Prerequisite:** BL-001 canonical guidance schema (defined; maintainer sign-off pending).
 
@@ -82,18 +82,50 @@ canonical/*.yaml → orchestrator → select template by (tool, principle catego
 
 ---
 
+### Option D: LLM with Custom Prompt (Preferred)
+
+**Description:** Canonical schema + tool-specific system prompt → LLM generates tool implementation files. Human reviews output before commit.
+
+**Flow:**
+```
+canonical/*.yaml → schema validated → custom prompt (tool, TOOL_TRANSLATION_GUIDE, checklist) → LLM → implementations/{tool}/
+```
+
+**Pros:**
+- Uses LLM's natural language and format adaptation (aligns with "translate intent, not mechanism")
+- No template or generator code to maintain; prompt is the config
+- Easy to refine: adjust prompt, regenerate
+- Handles tool-specific nuances (e.g. Cursor .mdc vs Claude CLAUDE.md) via prompt instructions
+- Can incorporate BL-008 checklists and TOOL_TRANSLATION_GUIDE directly in prompt context
+
+**Cons:**
+- Non-deterministic; may need regeneration for consistency
+- Prompt engineering required; prompt versioning matters
+- API cost per generation (mitigated by human review cadence)
+- Output must be validated (parity check, checklist) every run
+
+**Fit:** Best when semantic translation is primary and tool formats vary significantly. Aligns with existing "translate intent, not mechanism" philosophy.
+
+**Implementation sketch:**
+- System prompt: canonical schema + TOOL_TRANSLATION_GUIDE excerpt + tool-specific checklist
+- User prompt: "Generate [tool] implementation for principles: [list]. Output file(s) per tool conventions."
+- Output: LLM returns markdown; human saves to files, edits if needed, commits
+
+---
+
 ## 2. Trade-offs
 
-| Dimension | Template A | Code B | Hybrid C |
-|-----------|------------|--------|----------|
-| **Maintainability** | High (templates only) | Medium (code + schema) | Medium (both) |
-| **Flexibility** | Low | High | Medium |
-| **Onboarding** | Low barrier | Medium (programming) | Medium |
-| **Extensibility** | Add template | Add logic | Add template + orchestration rule |
-| **Validation** | Manual / lint | Programmatic | Programmatic |
-| **Human review** | Diff rendered output | Diff generated output | Same |
+| Dimension | Template A | Code B | Hybrid C | LLM D |
+|-----------|------------|--------|----------|-------|
+| **Maintainability** | High (templates only) | Medium (code + schema) | Medium (both) | High (prompt only) |
+| **Flexibility** | Low | High | Medium | High |
+| **Onboarding** | Low barrier | Medium (programming) | Medium | Low (prompt craft) |
+| **Extensibility** | Add template | Add logic | Add template + orchestration rule | Refine prompt |
+| **Validation** | Manual / lint | Programmatic | Programmatic | Manual + parity |
+| **Human review** | Diff rendered output | Diff generated output | Same | Diff generated output |
+| **Determinism** | Yes | Yes | Yes | No (regenerate for consistency) |
 
-**Recommendation:** Start with **Option A (Template-Based)** for MVP; migrate to **Option C (Hybrid)** if mapping complexity grows.
+**Recommendation:** **Option D (LLM with custom prompt)** — preferred. Aligns with "translate intent, not mechanism"; no code to maintain; prompt captures TOOL_TRANSLATION_GUIDE and checklists. Fallback: Option A if determinism or cost is a concern.
 
 ---
 
@@ -101,7 +133,9 @@ canonical/*.yaml → orchestrator → select template by (tool, principle catego
 
 ### Phase 3.1: Cursor (Pilot)
 
+- **Generator:** LLM with custom prompt (Option D)
 - **Input:** Schema-compliant YAML for principles in `canonical-tool-mapping.json` (ok/partial)
+- **Prompt context:** TOOL_TRANSLATION_GUIDE, cursor-translation checklist, canonical schema
 - **Output:** `implementations/cursor/.cursor/rules/always/*.mdc`
 - **Validation:** Parity check (BL-010), Cursor translation checklist (BL-008)
 - **Human review:** PR with generated diff; manual adjustment allowed
@@ -171,7 +205,7 @@ canonical/*.yaml → orchestrator → select template by (tool, principle catego
 ## 6. Approval
 
 - [ ] Design doc reviewed
-- [ ] Architecture option selected
+- [x] Architecture option selected: **Option D (LLM with custom prompt)** — preferred
 - [ ] Rollout plan approved
 - [ ] Maintainer sign-off
 

@@ -10,4 +10,4 @@ Templates and schemas for the AI Blindspots operational workflow.
 | [change-manifest-format.md](change-manifest-format.md) | Release delta format (BL-006) |
 | [decision-record.md](decision-record.md) | Decision log template (BL-004) |
 
-**Note:** BL-001 schema requires maintainer review before considered complete. See [../done/bl-001-define-canonical-guidance-schema.md](../done/bl-001-define-canonical-guidance-schema.md).
+**Note:** BL-001 schema sign-off requires verification that rules are implemented correctly across tools (Cursor, Claude, Codex, Gemini, Antigravity). See [../done/bl-001-define-canonical-guidance-schema.md](../done/bl-001-define-canonical-guidance-schema.md).

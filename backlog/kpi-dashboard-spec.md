@@ -73,4 +73,4 @@ Effectiveness metrics for the AI Blindspots operational process. Definitions and
 
 ## Status
 
-Spec complete. **Awaiting maintainer review and approval.**
+Spec complete. **Signed off.**
