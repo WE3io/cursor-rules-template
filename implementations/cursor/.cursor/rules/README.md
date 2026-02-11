@@ -29,6 +29,10 @@ Detailed reference material that AI can fetch when needed:
 4. Add scope declarations if not universal
 5. Update this README with the new rule
 
+## Translation Validation
+
+When adding or updating rules, use [cursor-translation.md](https://github.com/WE3io/cursor-rules-template/blob/main/ai-blindspots/checklists/cursor-translation.md) to verify intent preservation and mechanism adaptation. (Monorepo: `../../../../ai-blindspots/checklists/cursor-translation.md`)
+
 ## Related Documentation
 
 Required (expected in this template):

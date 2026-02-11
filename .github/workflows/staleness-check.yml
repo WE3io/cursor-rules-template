@@ -1,0 +1,30 @@
+# Staleness Check
+# Reports guidance items past review_date. Threshold: review_date has passed.
+# Manifest: backlog/staleness-manifest.json
+# Fails job when stale items exist (report in job output).
+
+name: Staleness Check
+
+on:
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'ai-blindspots/**'
+      - 'backlog/staleness-manifest.json'
+      - 'scripts/staleness-report.py'
+  push:
+    branches: [main, master]
+    paths:
+      - 'ai-blindspots/**'
+      - 'backlog/staleness-manifest.json'
+  workflow_dispatch:
+
+jobs:
+  staleness:
+    name: Staleness Report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run staleness report
+        run: python3 scripts/staleness-report.py

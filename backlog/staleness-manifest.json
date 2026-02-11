@@ -1,0 +1,14 @@
+{
+  "items": [
+    {"id": "ai-coding-assistant-rules", "title": "Rules for AI Coding Assistants", "location": "ai-blindspots/rules/ai-coding-assistant-rules.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "context-pollution", "title": "Context Pollution", "location": "ai-blindspots/articles/context-management/context-pollution.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "overconfidence", "title": "Overconfidence", "location": "ai-blindspots/articles/context-management/overconfidence.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "debugging-blindspot", "title": "Debugging Blindspot", "location": "ai-blindspots/articles/debugging/debugging-blindspot.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "memento", "title": "Memento", "location": "ai-blindspots/articles/fundamentals/memento.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "static-types", "title": "Static Types", "location": "ai-blindspots/articles/fundamentals/static-types.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "prompt-injection", "title": "Prompt Injection", "location": "ai-blindspots/articles/security/prompt-injection.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "quick-reference", "title": "Quick Reference Card", "location": "ai-blindspots/QUICK_REFERENCE.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "tool-translation-guide", "title": "Tool Translation Guide", "location": "ai-blindspots/TOOL_TRANSLATION_GUIDE.md", "owner": "maintainer", "review_date": "2026-08-01"},
+    {"id": "canonical-tool-mapping", "title": "Canonical-to-Tool Mapping Matrix", "location": "ai-blindspots/CANONICAL_TOOL_MAPPING.md", "owner": "maintainer", "review_date": "2026-08-01"}
+  ]
+}

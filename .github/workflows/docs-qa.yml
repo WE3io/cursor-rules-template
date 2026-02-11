@@ -1,0 +1,51 @@
+# Docs QA Pipeline
+# Runs markdown lint, link checks, and required-section checks. Blocks merge on failures.
+
+name: Docs QA
+
+on:
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'ai-blindspots/**'
+      - 'implementations/**'
+      - 'backlog/**'
+      - 'README.md'
+      - '**.md'
+
+jobs:
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v22
+        with:
+          globs: |
+            ai-blindspots/**/*.md
+            implementations/**/*.md
+            backlog/**/*.md
+            *.md
+
+  link-check:
+    name: Link Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: '--verbose --no-progress ai-blindspots/ implementations/ backlog/ *.md'
+          fail: true
+
+  required-sections:
+    name: Required Sections
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required sections in backlog work items
+        run: ./scripts/check-required-sections.sh

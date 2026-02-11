@@ -1,6 +1,7 @@
 # BL-009: Add Docs QA Pipeline
 
-**Phase:** Next
+**Phase:** Next  
+**Completed:** 2026-02-11 — Added `.github/workflows/docs-qa.yml` (markdown lint, link check, required-section check). `.markdownlint.json` and `scripts/check-required-sections.sh` added.
 
 ## 1. Outcome
 Automated markdown lint, link checks, and required-section checks. Pipeline runs on PRs and blocks on failures.
@@ -13,11 +14,11 @@ Automated markdown lint, link checks, and required-section checks. Pipeline runs
 **References:** None.
 
 ## 3. Acceptance Checks
-- [ ] Markdown lint runs (e.g. markdownlint, mdl).
-- [ ] Link checks run (internal and optionally external).
-- [ ] Required-section checks run (if defined).
-- [ ] Pipeline runs on PRs.
-- [ ] Pipeline blocks merge on failures.
+- [x] Markdown lint runs (e.g. markdownlint, mdl).
+- [x] Link checks run (internal and optionally external).
+- [x] Required-section checks run (if defined).
+- [x] Pipeline runs on PRs.
+- [x] Pipeline blocks merge on failures.
 
 ## 4. Explicit Non-Goals
 - Parity check pipeline (BL-010).

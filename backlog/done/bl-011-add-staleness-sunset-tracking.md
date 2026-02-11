@@ -1,6 +1,7 @@
 # BL-011: Add Staleness/Sunset Tracking
 
-**Phase:** Next
+**Phase:** Next  
+**Completed:** 2026-02-11 — Added `backlog/staleness-manifest.json`, `scripts/staleness-report.py`, `.github/workflows/staleness-check.yml`. Threshold: review_date passed.
 
 ## 1. Outcome
 Alerts for overdue review dates on guidance items. Stale-item report includes owner and due date.
@@ -13,10 +14,10 @@ Alerts for overdue review dates on guidance items. Stale-item report includes ow
 **References:** BL-001.
 
 ## 3. Acceptance Checks
-- [ ] Stale-item report generated.
-- [ ] Report includes owner and due date for each stale item.
-- [ ] Report surfaced (e.g. CI, weekly digest, or manual run).
-- [ ] Threshold for staleness documented.
+- [x] Stale-item report generated.
+- [x] Report includes owner and due date for each stale item.
+- [x] Report surfaced (e.g. CI, weekly digest, or manual run).
+- [x] Threshold for staleness documented.
 
 ## 4. Explicit Non-Goals
 - Migrating content to schema (BL-001 prerequisite).
