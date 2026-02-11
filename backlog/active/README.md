@@ -10,7 +10,12 @@ Work items ready for execution. Each file follows the Work Item Designer format:
 
 ### Phase: Now
 
-_No items. Phase: Now completed 2026-02-11. See [../done/](../done/)._
+| File | Summary |
+|------|---------|
+| [bl-026-enable-staged-parity-enforcement.md](bl-026-enable-staged-parity-enforcement.md) | Add staged parity enforcement configuration and exit behavior |
+| [bl-027-expand-backlog-section-qa-coverage.md](bl-027-expand-backlog-section-qa-coverage.md) | Extend required-section QA to active and done items |
+| [bl-028-refresh-root-readme-current-implementation-state.md](bl-028-refresh-root-readme-current-implementation-state.md) | Refresh root README to match current implementation status |
+| [bl-029-close-high-impact-parity-content-gaps.md](bl-029-close-high-impact-parity-content-gaps.md) | Close high-impact parity gaps in implementation content |
 
 ### Phase: Next (Completed 2026-02-11)
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Parity check: Report canonical-to-tool mapping gaps.
+Parity check: Report canonical-to-tool mapping coverage.
 Reads ai-blindspots/canonical-tool-mapping.json, emits report, exits non-zero on configured failures.
 """
 
@@ -25,6 +25,8 @@ def main():
     principles = data.get("principles", [])
 
     gaps_by_tool = {t: [] for t in tools}
+    partials_by_tool = {t: [] for t in tools}
+    ok_by_tool = {t: [] for t in tools}
     fail_count = 0
     warn_count = 0
 
@@ -32,7 +34,11 @@ def main():
         pid = p.get("id", "?")
         for tool in tools:
             status = p.get(tool, "gap")
-            if status == "gap":
+            if status == "ok":
+                ok_by_tool[tool].append(pid)
+            elif status == "partial":
+                partials_by_tool[tool].append(pid)
+            else:
                 gaps_by_tool[tool].append(pid)
                 if tool in fail_on_gap:
                     fail_count += 1
@@ -43,13 +49,22 @@ def main():
     lines = ["# Parity Report\n"]
     for tool in tools:
         gaps = gaps_by_tool[tool]
+        partials = partials_by_tool[tool]
+        ok = ok_by_tool[tool]
         severity = "FAIL" if tool in fail_on_gap and gaps else "WARN"
         lines.append(f"## {tool} ({severity if gaps else 'OK'})\n")
+        lines.append(
+            f"Status counts: ok={len(ok)}, partial={len(partials)}, gap={len(gaps)}\n"
+        )
+        if partials:
+            lines.append(f"Partial coverage ({len(partials)}):\n")
+            for pid in partials:
+                lines.append(f"- {pid}\n")
         if gaps:
-            lines.append(f"Missing/partial: {len(gaps)} principle(s)\n")
-            for g in gaps:
-                lines.append(f"- {g}\n")
-        else:
+            lines.append(f"Gaps ({len(gaps)}):\n")
+            for pid in gaps:
+                lines.append(f"- {pid}\n")
+        if not partials and not gaps:
             lines.append("All principles covered.\n")
         lines.append("\n")
 
@@ -60,6 +75,16 @@ def main():
     json_file = REPO_ROOT / "parity-report.json"
     json_data = {
         "gaps_by_tool": gaps_by_tool,
+        "partials_by_tool": partials_by_tool,
+        "ok_by_tool": ok_by_tool,
+        "status_counts_by_tool": {
+            tool: {
+                "ok": len(ok_by_tool[tool]),
+                "partial": len(partials_by_tool[tool]),
+                "gap": len(gaps_by_tool[tool]),
+            }
+            for tool in tools
+        },
         "fail_count": fail_count,
         "warn_count": warn_count,
     }
