@@ -28,4 +28,4 @@ Configure Allow/Deny lists for terminal execution. See [terminal-policy.md](term
 
 ## Reference
 
-See: AI Blindspots — [Prompt Injection](../docs/articles/security/prompt-injection.md)
+See: AI Blindspots — [Prompt Injection](../../.ai-assistant-rules/docs/articles/security/prompt-injection.md)

@@ -17,7 +17,7 @@ Choose one mode based on your use case:
 
 1. **Template Mode (recommended)**  
    Copy this entire `implementations/cursor/` folder.  
-   Result: all local rule docs and links under `docs/` are available.
+   Result: all local rule docs and links under `.ai-assistant-rules/docs/` are available.
 
 2. **Rules-Only Mode**  
    Copy only `.cursor/rules/` into an existing project.  
@@ -55,7 +55,7 @@ git remote add origin <your-repository-url>
 
 1. **Update project-specific information**:
    - Review and customize `.cursor/rules/` files for your project's needs
-   - Update documentation in `docs/` if needed
+   - Update documentation in `.ai-assistant-rules/docs/` if needed
 
 2. **Review Cursor Rules**:
    - Check `.cursor/rules/always/` for universal rules that apply to all code
@@ -63,8 +63,8 @@ git remote add origin <your-repository-url>
    - Customize rules based on your tech stack and team preferences
 
 3. **Read the Documentation**:
-   - `docs/aca_usage_guide.md` - Guide for using AI coding assistants effectively
-   - `docs/cursor_rules_best_practices.md` - Best practices for creating and maintaining rules
+   - `.ai-assistant-rules/docs/aca_usage_guide.md` - Guide for using AI coding assistants effectively
+   - `.ai-assistant-rules/docs/cursor_rules_best_practices.md` - Best practices for creating and maintaining rules
 
 ### Step 4: Commit and Push
 
@@ -89,15 +89,16 @@ git push -u origin main
 │       ├── always/              # Rules automatically included in every AI interaction
 │       ├── agent-requested/     # Detailed reference material fetched when needed
 │       └── README.md            # Rules documentation
-└── docs/
-    ├── aca_usage_guide.md       # AI Coding Assistant usage guide
-    ├── cursor_rules_best_practices.md  # Best practices for Cursor rules
-    └── articles/               # Bundled AI Blindspots articles (context-pollution)
+└── .ai-assistant-rules/
+    └── docs/
+        ├── aca_usage_guide.md       # AI Coding Assistant usage guide
+        ├── cursor_rules_best_practices.md  # Best practices for Cursor rules
+        └── articles/               # Bundled AI Blindspots articles (context-pollution)
 ```
 
 ## Bundled Docs
 
-`docs/articles/` contains bundled AI Blindspots articles for offline/standalone use. Source: `ai-blindspots/` in this repo; sync via `scripts/sync-bundled-docs.py`. For latest: [AI Blindspots](https://ezyang.github.io/ai-blindspots/). Do not edit bundled copies; they are overwritten by sync.
+`.ai-assistant-rules/docs/articles/` contains bundled AI Blindspots articles for offline/standalone use. Source: `ai-blindspots/` in this repo; sync via `scripts/sync-bundled-docs.py`. For latest: [AI Blindspots](https://ezyang.github.io/ai-blindspots/). Do not edit bundled copies; they are overwritten by sync.
 
 ## Next Steps
 
@@ -108,8 +109,8 @@ git push -u origin main
 
 ## Documentation
 
-- [AI Coding Assistant Usage Guide](docs/aca_usage_guide.md)
-- [Cursor Rules Best Practices](docs/cursor_rules_best_practices.md)
+- [AI Coding Assistant Usage Guide](.ai-assistant-rules/docs/aca_usage_guide.md)
+- [Cursor Rules Best Practices](.ai-assistant-rules/docs/cursor_rules_best_practices.md)
 - [Cursor Rules README](.cursor/rules/README.md)
 
 ## License

@@ -57,3 +57,4 @@ Work items ready for execution. Each file follows the Work Item Designer format:
 | File | Summary |
 |------|---------|
 | [bl-024-add-install-implementation-script.md](../done/bl-024-add-install-implementation-script.md) | Add install script for automated implementation placement |
+| [bl-036-relocate-installed-docs-to-dot-folder.md](../done/bl-036-relocate-installed-docs-to-dot-folder.md) | Relocate installed docs to `.ai-assistant-rules/docs/` for isolation and gitignorability |

@@ -412,7 +412,7 @@ When creating or updating Cursor rules:
 
 - Cursor Rules Documentation: [Official Cursor docs]
 - Markdown Guide: [CommonMark Spec]
-- Your Project's ACA Usage Guide: `docs/aca_usage_guide.md`
+- Your Project's ACA Usage Guide: `.ai-assistant-rules/docs/aca_usage_guide.md`
 
 ---
 

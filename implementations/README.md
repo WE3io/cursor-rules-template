@@ -48,6 +48,10 @@ python scripts/install-implementation.py <tool> [target_dir]
 Examples: `claude .` (current dir), `cursor /path/to/project`, or no args to list tools. Use `-t` or `--target` when passing flags: `claude -t /path --dry-run`.
 Options: `--force` / `-f` (overwrite existing), `--dry-run` / `-n` (preview only).
 
+Docs and the implementation README are installed to `.ai-assistant-rules/docs/` (isolated, gitignorable). Rule files reference these paths.
+
+**Gitignore (target repo):** To keep rules and docs out of version control, add to your project's `.gitignore`: `.ai-assistant-rules/` and the tool config folder (e.g. `.cursor/`, `.claude/`, `.agent/`). Omit this if you want to commit shared rules.
+
 ### Degit alternative
 
 If you have Node.js and prefer not to clone the repo:
@@ -57,6 +61,8 @@ npx degit <org>/ai-assistant-rules/implementations/<tool> .
 ```
 
 Replace `<org>` with the repository owner (e.g. `WE3io`). Requires network access.
+
+**Note:** Degit copies the raw folder; rule files expect docs at `.ai-assistant-rules/docs/`. For correct paths, run the install script after degit, or move `docs/` to `.ai-assistant-rules/docs/`.
 
 ---
 

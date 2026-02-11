@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Optional
 
 TOOLS = ["claude", "cursor", "gemini", "antigravity", "codex"]
+DOCS_ROOT = ".ai-assistant-rules"
 
 
 def get_repo_root() -> Path:
@@ -58,7 +59,9 @@ def install_implementation(
                 continue
             rel = path.relative_to(source)
             if path.name == "README.md" and path.parent == source:
-                dest = target / "docs" / f"ai-blindspots-{tool}-README.md"
+                dest = target / DOCS_ROOT / "docs" / f"ai-blindspots-{tool}-README.md"
+            elif rel.parts and rel.parts[0] == "docs":
+                dest = target / DOCS_ROOT / rel
             else:
                 dest = target / rel
             if dest.exists() and not force:

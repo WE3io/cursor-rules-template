@@ -36,8 +36,8 @@ When adding or updating rules, use [cursor-translation.md](https://github.com/WE
 ## Related Documentation
 
 Required (expected in this template):
-- `../../docs/aca_usage_guide.md` - Full AI Coding Assistant Usage Guide
-- `../../docs/cursor_rules_best_practices.md` - Best practices for creating rules
+- `../../.ai-assistant-rules/docs/aca_usage_guide.md` - Full AI Coding Assistant Usage Guide
+- `../../.ai-assistant-rules/docs/cursor_rules_best_practices.md` - Best practices for creating rules
 
 Optional canonical references:
 - **Monorepo:** Use `../../../../ai-blindspots/QUICK_REFERENCE.md` and `../../../../ai-blindspots/rules/ai-coding-assistant-rules.md` when this folder lives in the full ai-assistant-rules repo.
