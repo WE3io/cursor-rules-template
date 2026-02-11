@@ -12,145 +12,145 @@
       "id": "stop-digging",
       "Cursor": "partial",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "context-pollution",
       "Cursor": "partial",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "root-cause-analysis",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "scientific-debugging",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "security-external-content",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "security-permission-boundaries",
       "Cursor": "partial",
       "Claude": "partial",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "partial",
+      "Gemini": "partial",
+      "Antigravity": "partial"
     },
     {
       "id": "security-code-review",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "security-input-validation",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "file-size-limits",
       "Cursor": "gap",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "black-box-testing",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "deterministic-tests",
       "Cursor": "partial",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "confidence-calibration",
       "Cursor": "partial",
       "Claude": "partial",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "partial",
+      "Gemini": "partial",
+      "Antigravity": "partial"
     },
     {
       "id": "preparatory-refactoring",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "walking-skeleton",
       "Cursor": "partial",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "requirements-not-solutions",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "uncertainty-communication",
       "Cursor": "partial",
       "Claude": "partial",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "partial",
+      "Gemini": "partial",
+      "Antigravity": "partial"
     },
     {
       "id": "checkpoint-progress",
       "Cursor": "partial",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "discoverable-documentation",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "type-systems",
@@ -164,9 +164,9 @@
       "id": "decompose-changes",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "stateless-commands",
@@ -188,33 +188,33 @@
       "id": "ai-strengths",
       "Cursor": "partial",
       "Claude": "partial",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "partial",
+      "Gemini": "partial",
+      "Antigravity": "partial"
     },
     {
       "id": "overconfidence",
       "Cursor": "partial",
       "Claude": "partial",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "partial",
+      "Gemini": "partial",
+      "Antigravity": "partial"
     },
     {
       "id": "prompt-injection",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     },
     {
       "id": "memento",
       "Cursor": "partial",
       "Claude": "partial",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "partial",
+      "Gemini": "partial",
+      "Antigravity": "partial"
     },
     {
       "id": "static-types",
@@ -228,9 +228,9 @@
       "id": "debugging-blindspot",
       "Cursor": "ok",
       "Claude": "ok",
-      "Codex": "gap",
-      "Gemini": "gap",
-      "Antigravity": "gap"
+      "Codex": "ok",
+      "Gemini": "ok",
+      "Antigravity": "ok"
     }
   ]
 }

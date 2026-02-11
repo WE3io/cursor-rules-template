@@ -1,3 +1,5 @@
+**Completed:** 2026-02-11 — implementations/gemini/ with GEMINI.md, .agent/rules/, README. canonical-tool-mapping.json and implementations/README.md updated. Parity check run.
+
 # BL-019: Create Gemini CLI Implementation
 
 **Phase:** Later
@@ -14,12 +16,12 @@ Gemini CLI implementation added under `implementations/gemini/`. GEMINI.md and .
 **References:** BL-007, BL-008, BL-010, BL-016, [TOOL_TRANSLATION_GUIDE.md](../../ai-blindspots/TOOL_TRANSLATION_GUIDE.md).
 
 ## 3. Acceptance Checks
-- [ ] `implementations/gemini/GEMINI.md` exists with guidelines.
-- [ ] `.agent/rules/` structure created per Gemini conventions.
-- [ ] gemini-translation checklist applied; intent preserved.
-- [ ] Parity check run; canonical-tool-mapping.json updated for Gemini.
-- [ ] README with setup and usage instructions.
-- [ ] implementations/README.md table updated.
+- [x] `implementations/gemini/GEMINI.md` exists with guidelines.
+- [x] `.agent/rules/` structure created per Gemini conventions.
+- [x] gemini-translation checklist applied; intent preserved.
+- [x] Parity check run; canonical-tool-mapping.json updated for Gemini.
+- [x] README with setup and usage instructions.
+- [x] implementations/README.md table updated.
 
 ## 4. Explicit Non-Goals
 - .agent/skills/; optional follow-up.

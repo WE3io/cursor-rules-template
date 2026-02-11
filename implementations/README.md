@@ -12,9 +12,9 @@ Each implementation translates the canonical rules into the format required by t
 |------|------|--------|
 | **Cursor** | [cursor/](cursor/) | Ready |
 | **Claude Code** | [claude/](claude/) | Ready |
-| **Codex** | `codex/` | Planned |
-| **Gemini CLI** | `gemini/` | Planned |
-| **Antigravity** | `antigravity/` | Planned |
+| **Codex** | [codex/](codex/) | Ready |
+| **Gemini CLI** | [gemini/](gemini/) | Ready |
+| **Antigravity** | [antigravity/](antigravity/) | Ready |
 
 ---
 
@@ -38,6 +38,9 @@ ai-blindspots/          ← Canonical source (rules, articles, quick reference)
        └── implementations/   ← Tool-specific translations
                ├── cursor/
                ├── claude/
+               ├── codex/
+               ├── gemini/
+               ├── antigravity/
                └── ...
 ```
 

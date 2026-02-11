@@ -1,0 +1,5 @@
+# Optional Codex project config
+# Copy to project root if using Codex with this implementation
+
+project_doc_max_bytes = 65536
+project_doc_fallback_filenames = ["AGENTS.md", "TEAM_GUIDE.md"]
