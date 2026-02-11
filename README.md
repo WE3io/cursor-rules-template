@@ -35,6 +35,7 @@ cursorrules/
 | **Quick cheat sheet** | [ai-blindspots/QUICK_REFERENCE.md](ai-blindspots/QUICK_REFERENCE.md) (5 min) |
 | **Full ruleset** | [ai-blindspots/rules/ai-coding-assistant-rules.md](ai-blindspots/rules/ai-coding-assistant-rules.md) (30 min) |
 | **Set up a new Cursor project** | [implementations/cursor/README.md](implementations/cursor/README.md) |
+| **Install an implementation** | [implementations/README.md#installation](implementations/README.md#installation) |
 | **Browse tool implementations** | [implementations/README.md](implementations/README.md) |
 | **Adapt rules for other tools** | [ai-blindspots/TOOL_TRANSLATION_GUIDE.md](ai-blindspots/TOOL_TRANSLATION_GUIDE.md) (Claude, Codex, Gemini, Antigravity) |
 | **Deep dive on a topic** | [ai-blindspots/articles/](ai-blindspots/articles/) |

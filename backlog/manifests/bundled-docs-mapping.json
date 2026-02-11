@@ -1,0 +1,26 @@
+{
+  "bundled_articles": [
+    {
+      "source": "ai-blindspots/articles/security/prompt-injection.md",
+      "destinations": [
+        "implementations/claude/docs/articles/security/prompt-injection.md",
+        "implementations/gemini/docs/articles/security/prompt-injection.md",
+        "implementations/antigravity/docs/articles/security/prompt-injection.md"
+      ]
+    },
+    {
+      "source": "ai-blindspots/articles/debugging/debugging-blindspot.md",
+      "destinations": [
+        "implementations/claude/docs/articles/debugging/debugging-blindspot.md",
+        "implementations/gemini/docs/articles/debugging/debugging-blindspot.md",
+        "implementations/antigravity/docs/articles/debugging/debugging-blindspot.md"
+      ]
+    },
+    {
+      "source": "ai-blindspots/articles/context-management/context-pollution.md",
+      "destinations": [
+        "implementations/cursor/docs/articles/context-management/context-pollution.md"
+      ]
+    }
+  ]
+}

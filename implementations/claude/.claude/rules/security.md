@@ -23,4 +23,4 @@
 
 ## Reference
 
-See: AI Blindspots — [Prompt Injection](../../../../ai-blindspots/articles/security/prompt-injection.md)
+See: AI Blindspots — [Prompt Injection](../docs/articles/security/prompt-injection.md)

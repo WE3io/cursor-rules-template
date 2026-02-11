@@ -18,6 +18,27 @@ Each implementation translates the canonical rules into the format required by t
 
 ---
 
+## Installation
+
+### Install script (recommended)
+
+From the cursorrules repo root, or by path to the script:
+
+    python scripts/install-implementation.py <tool> [target_dir]
+
+Examples: `claude .` (current dir), `cursor /path/to/project`, or no args to list tools. Use `-t` or `--target` when passing flags: `claude -t /path --dry-run`.
+Options: `--force` / `-f` (overwrite existing), `--dry-run` / `-n` (preview only).
+
+### Degit alternative
+
+If you have Node.js and prefer not to clone the repo:
+
+    npx degit <org>/cursorrules/implementations/<tool> .
+
+Replace `<org>` with the repository owner (e.g. `WE3io`). Requires network access.
+
+---
+
 ## Adding a New Implementation
 
 1. Create a new folder: `implementations/<tool-name>/`

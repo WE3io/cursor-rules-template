@@ -91,10 +91,13 @@ git push -u origin main
 │       └── README.md            # Rules documentation
 └── docs/
     ├── aca_usage_guide.md       # AI Coding Assistant usage guide
-    └── cursor_rules_best_practices.md  # Best practices for Cursor rules
+    ├── cursor_rules_best_practices.md  # Best practices for Cursor rules
+    └── articles/               # Bundled AI Blindspots articles (context-pollution)
 ```
 
-Note: `ai-blindspots/` is not part of this template folder. In this monorepo it exists at `../../ai-blindspots/`.
+## Bundled Docs
+
+`docs/articles/` contains bundled AI Blindspots articles for offline/standalone use. Source: `ai-blindspots/` in this repo; sync via `scripts/sync-bundled-docs.py`. For latest: [AI Blindspots](https://ezyang.github.io/ai-blindspots/). Do not edit bundled copies; they are overwritten by sync.
 
 ## Next Steps
 

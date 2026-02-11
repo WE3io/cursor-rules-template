@@ -38,4 +38,4 @@ Systematic debugging over guesswork. Demand root cause before fixes.
 
 ## Reference
 
-See: AI Blindspots — [Debugging Blindspot](../../../../ai-blindspots/articles/debugging/debugging-blindspot.md)
+See: AI Blindspots — [Debugging Blindspot](../docs/articles/debugging/debugging-blindspot.md)

@@ -17,11 +17,12 @@ Lightweight monthly release flow with urgent security patch path. Uses [Change M
 
 Before each routine release:
 
-1. [ ] **QA passed** — Run docs-qa, parity-check, staleness-check
-2. [ ] **Manifest drafted** — List added/changed/removed/deprecated items
-3. [ ] **Links validated** — No broken references
-4. [ ] **Manifest finalized** — Save to `backlog/manifests/YYYY-MM-DD-*.md`
-5. [ ] **Tag or announce** — Optional; version is date-based
+1. [ ] **Bundled docs synced** — Run `python scripts/sync-bundled-docs.py` when ai-blindspots articles change
+2. [ ] **QA passed** — Run docs-qa, parity-check, staleness-check
+3. [ ] **Manifest drafted** — List added/changed/removed/deprecated items
+4. [ ] **Links validated** — No broken references
+5. [ ] **Manifest finalized** — Save to `backlog/manifests/YYYY-MM-DD-*.md`
+6. [ ] **Tag or announce** — Optional; version is date-based
 
 ---
 

@@ -40,3 +40,17 @@ _No items. Phase: Now completed 2026-02-11. See [../done/](../done/)._
 | [bl-018-create-codex-implementation.md](../done/bl-018-create-codex-implementation.md) | Create Codex implementation |
 | [bl-019-create-gemini-implementation.md](../done/bl-019-create-gemini-implementation.md) | Create Gemini CLI implementation |
 | [bl-020-create-antigravity-implementation.md](../done/bl-020-create-antigravity-implementation.md) | Create Antigravity implementation |
+
+### Phase: Bundled Docs (Standalone Install) — Completed 2026-02-11
+
+| File | Summary |
+|------|---------|
+| [bl-021-bundle-referenced-docs-design.md](../done/bl-021-bundle-referenced-docs-design.md) | Bundle referenced docs — design |
+| [bl-022-add-bundled-docs-to-implementations.md](../done/bl-022-add-bundled-docs-to-implementations.md) | Add bundled docs to implementations |
+| [bl-023-add-sync-script-for-bundled-docs.md](../done/bl-023-add-sync-script-for-bundled-docs.md) | Add sync script for bundled docs |
+
+### Phase: Later (Completed 2026-02-11)
+
+| File | Summary |
+|------|---------|
+| [bl-024-add-install-implementation-script.md](../done/bl-024-add-install-implementation-script.md) | Add install script for automated implementation placement |

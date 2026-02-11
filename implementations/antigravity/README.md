@@ -21,6 +21,8 @@ implementations/antigravity/
 │       ├── context-management.md
 │       ├── testing.md
 │       └── terminal-policy.md   # Antigravity-specific: Allow/Deny example
+├── docs/
+│   └── articles/         # Bundled AI Blindspots articles (prompt-injection, debugging-blindspot)
 └── README.md
 ```
 
@@ -33,6 +35,10 @@ implementations/antigravity/
 ## Translation
 
 Principles translated from canonical rules. Antigravity adapts security rules to terminal execution policies. See [ai-blindspots/TOOL_TRANSLATION_GUIDE.md](../../ai-blindspots/TOOL_TRANSLATION_GUIDE.md).
+
+## Bundled Docs
+
+`docs/articles/` contains bundled AI Blindspots articles for offline/standalone use. Source: `ai-blindspots/` in this repo; sync via `scripts/sync-bundled-docs.py`. For latest: [AI Blindspots](https://ezyang.github.io/ai-blindspots/). Do not edit bundled copies; they are overwritten by sync.
 
 ## References
 

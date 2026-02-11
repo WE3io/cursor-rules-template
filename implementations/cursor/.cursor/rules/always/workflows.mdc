@@ -255,7 +255,7 @@ Understanding root causes prevents similar bugs. Minimal fixes reduce risk of in
 
 Restart sessions at ~20–30 messages on complex problems. Long conversations accumulate errors and misconceptions; early mistakes compound. Fresh sessions with clear summaries outperform extended polluted context.
 
-**Reference:** [Context Pollution](../../../../ai-blindspots/articles/context-management/context-pollution.md) (monorepo) or [upstream](https://ezyang.github.io/ai-blindspots/)
+**Reference:** [Context Pollution](../../../docs/articles/context-management/context-pollution.md)
 
 ---
 
