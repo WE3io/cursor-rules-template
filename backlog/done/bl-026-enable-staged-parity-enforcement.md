@@ -1,6 +1,8 @@
+**Completed:** 2026-02-11 — Added staged parity policy fields (`enforcement_stage`, `fail_on_gap`, `fail_on_partial`) with deterministic reporting and exit behavior.
+
 # BL-026: Enable Staged Parity Enforcement
 
-**Phase:** Active (Untriaged)
+**Phase:** Now
 
 ## 1. Outcome
 Parity check supports staged enforcement so selected tools/statuses fail CI while others remain warnings, enabling gradual tightening without blocking all translation work at once.
@@ -13,11 +15,11 @@ Parity check supports staged enforcement so selected tools/statuses fail CI whil
 **References:** `scripts/parity-check.py`, `ai-blindspots/canonical-tool-mapping.json`, `.github/workflows/parity-check.yml`, `backlog/done/bl-010-add-parity-check-pipeline.md`.
 
 ## 3. Acceptance Checks
-- [ ] Config supports staged policy (for example, fail-on-gap per tool and optional fail-on-partial per tool).
-- [ ] Script exit code reflects configured staged policy.
-- [ ] Report output clearly shows which findings are warnings vs failures under current config.
-- [ ] Default config in repo is set to a documented initial stage (not all-or-nothing).
-- [ ] CI parity workflow remains green when repository state matches chosen stage policy.
+- [x] Config supports staged policy (for example, fail-on-gap per tool and optional fail-on-partial per tool).
+- [x] Script exit code reflects configured staged policy.
+- [x] Report output clearly shows which findings are warnings vs failures under current config.
+- [x] Default config in repo is set to a documented initial stage (not all-or-nothing).
+- [x] CI parity workflow remains green when repository state matches chosen stage policy.
 
 ## 4. Explicit Non-Goals
 - Writing or translating missing guidance content.

@@ -6,7 +6,9 @@
     "Gemini",
     "Antigravity"
   ],
+  "enforcement_stage": "stage-0-observe",
   "fail_on_gap": [],
+  "fail_on_partial": [],
   "principles": [
     {
       "id": "stop-digging",

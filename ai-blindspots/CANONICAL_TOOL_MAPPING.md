@@ -12,6 +12,18 @@
 
 ---
 
+## Parity Enforcement Policy
+
+`canonical-tool-mapping.json` includes staged enforcement fields used by `scripts/parity-check.py`:
+
+- `enforcement_stage`: descriptive stage label (current default: `stage-0-observe`)
+- `fail_on_gap`: tools where `gap` findings fail parity check
+- `fail_on_partial`: tools where `partial` findings fail parity check
+
+Initial stage is intentionally non-blocking (`stage-0-observe`): all findings are warnings while coverage baseline is improved.
+
+---
+
 ## Legend
 
 | Symbol | Meaning |
