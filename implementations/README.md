@@ -11,7 +11,7 @@ Each implementation translates the canonical rules into the format required by t
 | Tool | Path | Status |
 |------|------|--------|
 | **Cursor** | [cursor/](cursor/) | Ready |
-| **Claude Code** | `claude/` | Planned |
+| **Claude Code** | [claude/](claude/) | Ready |
 | **Codex** | `codex/` | Planned |
 | **Gemini CLI** | `gemini/` | Planned |
 | **Antigravity** | `antigravity/` | Planned |
@@ -37,7 +37,7 @@ ai-blindspots/          ← Canonical source (rules, articles, quick reference)
        │
        └── implementations/   ← Tool-specific translations
                ├── cursor/
-               ├── claude/    (planned)
+               ├── claude/
                └── ...
 ```
 

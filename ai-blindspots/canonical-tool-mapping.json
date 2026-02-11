@@ -1,34 +1,236 @@
 {
-  "tools": ["Cursor", "Claude", "Codex", "Gemini", "Antigravity"],
+  "tools": [
+    "Cursor",
+    "Claude",
+    "Codex",
+    "Gemini",
+    "Antigravity"
+  ],
   "fail_on_gap": [],
   "principles": [
-    {"id": "stop-digging", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "context-pollution", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "root-cause-analysis", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "scientific-debugging", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "security-external-content", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "security-permission-boundaries", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "security-code-review", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "security-input-validation", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "file-size-limits", "Cursor": "gap", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "black-box-testing", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "deterministic-tests", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "confidence-calibration", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "preparatory-refactoring", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "walking-skeleton", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "requirements-not-solutions", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "uncertainty-communication", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "checkpoint-progress", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "discoverable-documentation", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "type-systems", "Cursor": "gap", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "decompose-changes", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "stateless-commands", "Cursor": "gap", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "knowledge-limitations", "Cursor": "gap", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "ai-strengths", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "overconfidence", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "prompt-injection", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "memento", "Cursor": "partial", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "static-types", "Cursor": "gap", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"},
-    {"id": "debugging-blindspot", "Cursor": "ok", "Claude": "gap", "Codex": "gap", "Gemini": "gap", "Antigravity": "gap"}
+    {
+      "id": "stop-digging",
+      "Cursor": "partial",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "context-pollution",
+      "Cursor": "partial",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "root-cause-analysis",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "scientific-debugging",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "security-external-content",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "security-permission-boundaries",
+      "Cursor": "partial",
+      "Claude": "partial",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "security-code-review",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "security-input-validation",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "file-size-limits",
+      "Cursor": "gap",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "black-box-testing",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "deterministic-tests",
+      "Cursor": "partial",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "confidence-calibration",
+      "Cursor": "partial",
+      "Claude": "partial",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "preparatory-refactoring",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "walking-skeleton",
+      "Cursor": "partial",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "requirements-not-solutions",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "uncertainty-communication",
+      "Cursor": "partial",
+      "Claude": "partial",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "checkpoint-progress",
+      "Cursor": "partial",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "discoverable-documentation",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "type-systems",
+      "Cursor": "gap",
+      "Claude": "gap",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "decompose-changes",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "stateless-commands",
+      "Cursor": "gap",
+      "Claude": "gap",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "knowledge-limitations",
+      "Cursor": "gap",
+      "Claude": "gap",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "ai-strengths",
+      "Cursor": "partial",
+      "Claude": "partial",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "overconfidence",
+      "Cursor": "partial",
+      "Claude": "partial",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "prompt-injection",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "memento",
+      "Cursor": "partial",
+      "Claude": "partial",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "static-types",
+      "Cursor": "gap",
+      "Claude": "gap",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    },
+    {
+      "id": "debugging-blindspot",
+      "Cursor": "ok",
+      "Claude": "ok",
+      "Codex": "gap",
+      "Gemini": "gap",
+      "Antigravity": "gap"
+    }
   ]
 }
