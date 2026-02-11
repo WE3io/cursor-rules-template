@@ -2,6 +2,8 @@
 
 In-depth exploration of specific AI limitations and mitigation strategies.
 
+**Naming convention:** `topic-noun.md` (e.g. `context-pollution`, `prompt-injection`). Single-concept articles may use one word (e.g. `memento`).
+
 ---
 
 ## Articles by Category
@@ -11,7 +13,7 @@ In-depth exploration of specific AI limitations and mitigation strategies.
 | Article | Topics | Time | Key Insight |
 |---------|--------|------|-------------|
 | **[Memento](fundamentals/memento.md)** | Memory, Context, Sessions | 10 min | No persistent memory across sessions |
-| **[Use Static Types](fundamentals/use-static-types.md)** | Types, Refactoring | 12 min | Types reduce overhead & guide refactoring |
+| **[Static Types](fundamentals/static-types.md)** | Types, Refactoring | 12 min | Types reduce overhead & guide refactoring |
 
 ### 🔒 Security
 
@@ -49,7 +51,7 @@ All 6 articles in order
 - **Security?** → [Prompt Injection](security/prompt-injection.md)
 - **Debugging?** → [Debugging Blindspot](debugging/debugging-blindspot.md)
 - **Trust issues?** → [Overconfidence](context-management/overconfidence.md)
-- **Refactoring?** → [Use Static Types](fundamentals/use-static-types.md)
+- **Refactoring?** → [Static Types](fundamentals/static-types.md)
 - **Confused?** → [Memento](fundamentals/memento.md)
 
 ---

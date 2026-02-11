@@ -35,11 +35,9 @@ Required (expected in this template):
 - `../../docs/aca_usage_guide.md` - Full AI Coding Assistant Usage Guide
 - `../../docs/cursor_rules_best_practices.md` - Best practices for creating rules
 
-Optional canonical references (available in the monorepo, may be absent in standalone installs):
-- `../../../../ai-blindspots/QUICK_REFERENCE.md` - AI Blindspots one-page cheat sheet (when to restart, security red flags, debugging flow)
-- `../../../../ai-blindspots/rules/ai-coding-assistant-rules.md` - Comprehensive AI Blindspots ruleset (core principles, implementation guidelines, and decision aids)
-
-If you install only `.cursor/rules/`, replace optional links with project-local docs or absolute URLs.
+Optional canonical references:
+- **Monorepo:** Use `../../../../ai-blindspots/QUICK_REFERENCE.md` and `../../../../ai-blindspots/rules/ai-coding-assistant-rules.md` when this folder lives in the full cursorrules repo.
+- **Standalone:** Use [QUICK_REFERENCE.md](https://github.com/WE3io/cursor-rules-template/blob/main/ai-blindspots/QUICK_REFERENCE.md) and [ai-coding-assistant-rules.md](https://github.com/WE3io/cursor-rules-template/blob/main/ai-blindspots/rules/ai-coding-assistant-rules.md) from the upstream repo, or copy those files into your project.
 
 ## Maintenance
 

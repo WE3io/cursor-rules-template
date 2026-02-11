@@ -19,7 +19,7 @@ LLMs have no persistent memory across sessions. Understanding this fundamental l
 
 ---
 
-### [Use Static Types](use-static-types.md)
+### [Static Types](static-types.md)
 **Leveraging type systems for better AI collaboration**
 
 Type systems dramatically reduce the overhead of statically-typed languages when working with AI, enabling better refactoring and catching errors early.

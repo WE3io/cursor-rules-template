@@ -14,7 +14,11 @@ cursorrules/
 │   ├── QUICK_REFERENCE.md
 │   └── TOOL_TRANSLATION_GUIDE.md
 │
-└── implementations/         # Tool-specific rule configurations
+├── backlog/
+│   ├── active/              # Work items (phases: Now, Next, Later)
+│   └── done/                # Completed work items
+│
+└── implementations/        # Tool-specific rule configurations
     ├── cursor/              # Cursor IDE (Claude, Codex, Gemini planned)
     │   ├── .cursor/rules/   # Ready-to-use Cursor rules
     │   └── docs/

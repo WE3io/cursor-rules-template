@@ -36,7 +36,7 @@ In-depth coverage by category:
 
 **Fundamentals**
 - [Memento](articles/fundamentals/memento.md) - Memory & context limitations
-- [Use Static Types](articles/fundamentals/use-static-types.md) - Leveraging types
+- [Static Types](articles/fundamentals/static-types.md) - Leveraging types
 
 **Security**
 - [Prompt Injection](articles/security/prompt-injection.md) - Security vulnerabilities
@@ -47,6 +47,9 @@ In-depth coverage by category:
 **Context Management**
 - [Context Pollution](articles/context-management/context-pollution.md) - When to restart
 - [Overconfidence](articles/context-management/overconfidence.md) - Calibrating trust
+
+### 📝 [Examples](examples/)
+Side-by-side translation examples: [translation-examples.md](examples/translation-examples.md) — same rules in Cursor, Claude, Codex, Gemini, Antigravity formats.
 
 ---
 
@@ -108,6 +111,7 @@ All 6 articles + full rules document
 - [Complete Rules](rules/ai-coding-assistant-rules.md)
 - [All Articles](articles/README.md)
 - [Tool Translation Guide](TOOL_TRANSLATION_GUIDE.md) - Adapt rules for Claude Code, Codex, Gemini, Antigravity
+- [Translation Examples](examples/translation-examples.md) - Side-by-side rule translations
 - [Archive](archive/) (original content)
 
 ## Related

@@ -10,6 +10,8 @@
 
 The rules express universal truths about AI behavior. How you communicate them varies by tool, but what they mean remains constant.
 
+For side-by-side examples, see [examples/translation-examples.md](examples/translation-examples.md).
+
 ---
 
 ## Tool Configuration Equivalents
