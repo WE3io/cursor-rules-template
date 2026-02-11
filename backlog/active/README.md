@@ -12,8 +12,7 @@ Work items ready for execution. Each file follows the Work Item Designer format:
 
 | File | Summary |
 |------|---------|
-| [bl-028-refresh-root-readme-current-implementation-state.md](bl-028-refresh-root-readme-current-implementation-state.md) | Refresh root README to match current implementation status |
-| [bl-029-close-high-impact-parity-content-gaps.md](bl-029-close-high-impact-parity-content-gaps.md) | Close high-impact parity gaps in implementation content |
+| [bl-033-run-github-rename-and-discovery-settings-checklist.md](bl-033-run-github-rename-and-discovery-settings-checklist.md) | Execute GitHub rename/discoverability settings checklist and record completion (manual) |
 
 ### Phase: Next (Completed 2026-02-11)
 

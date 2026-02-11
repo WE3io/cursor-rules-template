@@ -6,7 +6,7 @@ Copy-paste steps to generate a tool implementation using the prompt template. AP
 
 ## Prerequisites
 
-- Repo checked out at `cursorrules/`
+- Repo checked out at `ai-assistant-rules/`
 - Access to an LLM with sufficient context window (~50K+ tokens for full context)
 
 ---

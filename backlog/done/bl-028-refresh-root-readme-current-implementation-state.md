@@ -1,6 +1,8 @@
+**Completed:** 2026-02-11
+
 # BL-028: Refresh Root README for Current Implementation State
 
-**Phase:** Active (Untriaged)
+**Phase:** Now
 
 ## 1. Outcome
 Root `README.md` accurately reflects the repository's current implementation coverage, installation guidance, and structure so first-time readers are not misled by stale project status text.
@@ -16,7 +18,7 @@ Root `README.md` accurately reflects the repository's current implementation cov
 - [x] Root README no longer states non-Cursor implementations are "planned" where they are now available.
 - [x] Implementation list in root README aligns with `implementations/README.md`.
 - [x] Installation path in root README points to current recommended flow.
-- [ ] Updated README passes markdown lint and link checks in docs QA.
+- [x] Updated README passes markdown lint and link checks in docs QA.
 
 ## 4. Explicit Non-Goals
 - Redesigning README information architecture.

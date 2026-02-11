@@ -1,6 +1,6 @@
-# Cursor Rules Template
+# Cursor Implementation
 
-This repository serves as a template base for new projects with pre-configured Cursor rules and AI coding assistant guidelines.
+Cursor implementation of AI Assistant Rules. This folder serves as a template base for new projects with pre-configured Cursor rules and AI coding assistant guidelines.
 
 **Repository**: [https://github.com/WE3io/Cursor-Rules-Template](https://github.com/WE3io/Cursor-Rules-Template)
 

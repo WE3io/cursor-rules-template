@@ -2,7 +2,7 @@
 
 Tool-specific rule configurations derived from [AI Blindspots](../ai-blindspots/).
 
-Each implementation translates the canonical rules into the format required by that tool. See [ai-blindspots/TOOL_TRANSLATION_GUIDE.md](../ai-blindspots/TOOL_TRANSLATION_GUIDE.md) for translation principles.
+Each implementation translates the canonical rules into the format required by that tool. This monorepo provides implementations for Cursor, Claude Code, Codex, Gemini CLI, and Antigravity. See [ai-blindspots/TOOL_TRANSLATION_GUIDE.md](../ai-blindspots/TOOL_TRANSLATION_GUIDE.md) for translation principles.
 
 ---
 
@@ -22,9 +22,11 @@ Each implementation translates the canonical rules into the format required by t
 
 ### Install script (recommended)
 
-From the cursorrules repo root, or by path to the script:
+From the ai-assistant-rules repo root, or by path to the script:
 
-    python scripts/install-implementation.py <tool> [target_dir]
+```bash
+python scripts/install-implementation.py <tool> [target_dir]
+```
 
 Examples: `claude .` (current dir), `cursor /path/to/project`, or no args to list tools. Use `-t` or `--target` when passing flags: `claude -t /path --dry-run`.
 Options: `--force` / `-f` (overwrite existing), `--dry-run` / `-n` (preview only).
@@ -33,7 +35,9 @@ Options: `--force` / `-f` (overwrite existing), `--dry-run` / `-n` (preview only
 
 If you have Node.js and prefer not to clone the repo:
 
-    npx degit <org>/cursorrules/implementations/<tool> .
+```bash
+npx degit <org>/ai-assistant-rules/implementations/<tool> .
+```
 
 Replace `<org>` with the repository owner (e.g. `WE3io`). Requires network access.
 

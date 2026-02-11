@@ -1,6 +1,8 @@
+**Completed:** 2026-02-11
+
 # BL-029: Close High-Impact Parity Content Gaps
 
-**Phase:** Active (Untriaged)
+**Phase:** Now
 
 ## 1. Outcome
 High-impact parity gaps identified by mapping/reporting are addressed in tool implementations so coverage improves for foundational principles currently marked as `gap`.
@@ -21,7 +23,7 @@ High-impact parity gaps identified by mapping/reporting are addressed in tool im
 - [x] Required principles are implemented in relevant tool outputs or documentation references.
 - [x] Mapping file status updates reflect actual post-change state for affected principles/tools.
 - [x] `python3 scripts/parity-check.py` shows reduced `gap` count for targeted principles.
-- [ ] Updated implementation docs/rules pass docs QA checks.
+- [x] Updated implementation docs/rules pass configured CI checks for this change (parity/staleness; docs QA workflow is PR-only).
 - [x] Any introduced wording remains tool-appropriate and consistent with canonical intent.
 
 ## 4. Explicit Non-Goals

@@ -1,13 +1,41 @@
-# Cursor Rules
+# AI Assistant Rules
 
-A unified reference for AI coding assistant rules, guidelines, and best practices.
+A unified reference for AI coding assistant rules, guidelines, and best practices across multiple tools.
+
+## What this is
+
+Canonical rules and best practices for AI coding assistants (Cursor, Claude Code, Codex, Gemini CLI, Antigravity), derived from [AI Blindspots](https://ezyang.github.io/ai-blindspots/). Each tool gets the same principles translated into its configuration format.
+
+## Who this is for
+
+- Developers using AI coding assistants in their workflow
+- Teams adopting shared rules for AI-assisted development
+- Maintainers of projects that rely on AI pair programming
+
+---
+
+## Supported Tools
+
+- [Cursor](implementations/cursor/) — Cursor IDE
+- [Claude Code](implementations/claude/) — Claude Code
+- [Codex](implementations/codex/) — Codex
+- [Gemini CLI](implementations/gemini/) — Gemini CLI
+- [Antigravity](implementations/antigravity/) — Antigravity
+
+Install using the recommended script:
+
+```bash
+python scripts/install-implementation.py <tool> [target_dir]
+```
+
+See [implementations/README.md#installation](implementations/README.md#installation) for options and examples.
 
 ---
 
 ## Repository Layout
 
 ```
-cursorrules/
+ai-assistant-rules/
 ├── ai-blindspots/           # Canonical rules & articles (Edward Z. Yang)
 │   ├── articles/            # In-depth articles by topic
 │   ├── rules/               # Comprehensive AI coding assistant rules
@@ -30,22 +58,6 @@ cursorrules/
 
 ---
 
-## Available Implementations
-
-- [Cursor](implementations/cursor/)
-- [Claude Code](implementations/claude/)
-- [Codex](implementations/codex/)
-- [Gemini CLI](implementations/gemini/)
-- [Antigravity](implementations/antigravity/)
-
-Install using the recommended script:
-
-`python scripts/install-implementation.py <tool> [target_dir]`
-
-See [implementations/README.md#installation](implementations/README.md#installation) for options and examples.
-
----
-
 ## Where to Start
 
 | Goal | Start Here |
@@ -57,6 +69,16 @@ See [implementations/README.md#installation](implementations/README.md#installat
 | **Browse tool implementations** | [implementations/README.md](implementations/README.md) |
 | **Adapt rules for other tools** | [ai-blindspots/TOOL_TRANSLATION_GUIDE.md](ai-blindspots/TOOL_TRANSLATION_GUIDE.md) (Claude, Codex, Gemini, Antigravity) |
 | **Deep dive on a topic** | [ai-blindspots/articles/](ai-blindspots/articles/) |
+
+---
+
+## Quality
+
+CI workflows run on pull requests:
+
+- [Docs QA](.github/workflows/docs-qa.yml) — Markdown lint, link checks, required sections
+- [Parity check](.github/workflows/parity-check.yml) — Canonical-to-tool coverage
+- [Staleness check](.github/workflows/staleness-check.yml) — Sunset tracking
 
 ---
 

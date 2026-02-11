@@ -5,7 +5,7 @@ Install AI Blindspots implementation into a target directory.
 Copies a chosen implementation (claude, cursor, gemini, antigravity, codex) into
 the target directory. Default: merge without overwriting. Use --force to overwrite.
 
-Run from cursorrules repo root, or by path: python scripts/install-implementation.py <tool> [target_dir]
+Run from ai-assistant-rules repo root, or by path: python scripts/install-implementation.py <tool> [target_dir]
 """
 import argparse
 import shutil
