@@ -1,3 +1,5 @@
+**Completed:** 2026-02-11 — KPI spec in backlog/kpi-dashboard-spec.md. Definitions and cadence for time-to-update, translation parity %, post-release defects. Awaiting maintainer review/approval.
+
 # BL-013: Add KPI Dashboard Spec
 
 **Phase:** Later
@@ -12,11 +14,11 @@ Effectiveness metrics for the process. Definitions and cadence for `time-to-upda
 **References:** BL-006, BL-010, BL-012.
 
 ## 3. Acceptance Checks
-- [ ] `time-to-update` defined (e.g. intake to release).
-- [ ] `translation parity %` defined (e.g. from BL-010 report).
-- [ ] `post-release defects` defined (e.g. rollbacks, hotfixes).
-- [ ] Cadence for each metric documented.
-- [ ] Spec reviewed and approved.
+- [x] `time-to-update` defined (e.g. intake to release).
+- [x] `translation parity %` defined (e.g. from BL-010 report).
+- [x] `post-release defects` defined (e.g. rollbacks, hotfixes).
+- [x] Cadence for each metric documented.
+- [ ] Spec reviewed and approved (pending maintainer).
 
 ## 4. Explicit Non-Goals
 - Building the dashboard.

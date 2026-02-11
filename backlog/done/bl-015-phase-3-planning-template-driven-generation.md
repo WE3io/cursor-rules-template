@@ -1,3 +1,5 @@
+**Completed:** 2026-02-11 — Design doc in backlog/phase3-template-generation-design.md. Architecture options, trade-offs, rollout plan documented. Awaiting maintainer approval.
+
 # BL-015: Phase 3 Planning for Template-Driven Generation
 
 **Phase:** Later
@@ -13,11 +15,11 @@ Design doc for semi-automated generation of tool formats from canonical schema. 
 **References:** BL-001, BL-007, BL-008, `ai-blindspots/TOOL_TRANSLATION_GUIDE.md`.
 
 ## 3. Acceptance Checks
-- [ ] Design doc exists.
-- [ ] Architecture options documented.
-- [ ] Trade-offs documented.
-- [ ] Rollout plan documented.
-- [ ] Plan approved by maintainer(s).
+- [x] Design doc exists.
+- [x] Architecture options documented.
+- [x] Trade-offs documented.
+- [x] Rollout plan documented.
+- [ ] Plan approved by maintainer(s) (pending).
 
 ## 4. Explicit Non-Goals
 - Implementing the generator.

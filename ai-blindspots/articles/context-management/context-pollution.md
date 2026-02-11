@@ -4,7 +4,7 @@
 
 ## The Blindspot
 
-Long conversations accumulate errors, misconceptions, and outdated assumptions. Each response builds on previous context, so early mistakes compound over time, making later responses progressively less reliable.
+Long conversations accumulate errors, misconceptions, and outdated assumptions. Each response builds on previous context, so early mistakes compound over time, making later responses progressively less reliable. **Restart at ~20–30 messages on complex problems** to avoid degraded output.
 
 ## Why It Happens
 

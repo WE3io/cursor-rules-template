@@ -22,11 +22,11 @@ _No items. Phase: Now completed 2026-02-11. See [../done/](../done/)._
 | [bl-010-add-parity-check-pipeline.md](../done/bl-010-add-parity-check-pipeline.md) | Add parity check pipeline |
 | [bl-011-add-staleness-sunset-tracking.md](../done/bl-011-add-staleness-sunset-tracking.md) | Add staleness/sunset tracking |
 
-### Phase: Later
+### Phase: Later (Completed 2026-02-11)
 
 | File | Summary |
 |------|---------|
-| [bl-012-define-release-workflow.md](bl-012-define-release-workflow.md) | Define release workflow |
-| [bl-013-add-kpi-dashboard-spec.md](bl-013-add-kpi-dashboard-spec.md) | Add KPI dashboard spec |
-| [bl-014-pilot-one-end-to-end-cycle.md](bl-014-pilot-one-end-to-end-cycle.md) | Pilot one end-to-end cycle |
-| [bl-015-phase-3-planning-template-driven-generation.md](bl-015-phase-3-planning-template-driven-generation.md) | Phase 3 planning for template-driven generation |
+| [bl-012-define-release-workflow.md](../done/bl-012-define-release-workflow.md) | Define release workflow |
+| [bl-013-add-kpi-dashboard-spec.md](../done/bl-013-add-kpi-dashboard-spec.md) | Add KPI dashboard spec |
+| [bl-014-pilot-one-end-to-end-cycle.md](../done/bl-014-pilot-one-end-to-end-cycle.md) | Pilot one end-to-end cycle |
+| [bl-015-phase-3-planning-template-driven-generation.md](../done/bl-015-phase-3-planning-template-driven-generation.md) | Phase 3 planning for template-driven generation |

@@ -40,3 +40,4 @@ For each intake in the queue:
 | Date | Intakes | Decisions |
 |------|---------|-----------|
 | 2026-02-11 | sample-intake-001 | Reject (template validation only) |
+| 2026-02-11 | pilot-context-restart-threshold | Accept (BL-014 pilot cycle) |

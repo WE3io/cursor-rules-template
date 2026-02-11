@@ -1,3 +1,5 @@
+**Completed:** 2026-02-11 — Release workflow in backlog/release-workflow.md (checklist, versioning, emergency protocol); first release executed via backlog/manifests/2026-02-11-later-phase-release-workflow.md.
+
 # BL-012: Define Release Workflow
 
 **Phase:** Later
@@ -13,10 +15,10 @@ Lightweight monthly release flow with urgent security patch path. Checklist, ver
 **References:** BL-006.
 
 ## 3. Acceptance Checks
-- [ ] Release checklist documented.
-- [ ] Versioning policy documented.
-- [ ] Emergency patch protocol documented.
-- [ ] At least one release executed using workflow.
+- [x] Release checklist documented.
+- [x] Versioning policy documented.
+- [x] Emergency patch protocol documented.
+- [x] At least one release executed using workflow.
 
 ## 4. Explicit Non-Goals
 - Automating release steps.
