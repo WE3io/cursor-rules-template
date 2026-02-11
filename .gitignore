@@ -1,2 +1,22 @@
 # Parity check output
 parity-report.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Install output (created when running install-implementation.py)
+.claude
+.codex
+.cursor
+.gemini
+.ai-assistant-rules
+
+# macOS
+.DS_Store
+
+# Virtual environments
+venv/
+.venv/
+env/
